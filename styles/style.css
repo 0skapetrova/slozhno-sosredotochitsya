@@ -159,6 +159,9 @@
 }
 
 .section__articles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   gap: 20px;
 }
@@ -295,23 +298,23 @@ p a:focus-visible {
     ;
   }
   
-  .foto-grid__item.foto-grid__item-1 {
+  .foto-grid__item.foto-grid__sunset {
     grid-area: i1;
   }
 
-  .foto-grid__item.foto-grid__item-2 {
+  .foto-grid__item.foto-grid__ice-cream {
     grid-area: i2;
   }
 
-  .foto-grid__item.foto-grid__item-3 {
+  .foto-grid__item.foto-grid__tape {
     grid-area: i3;
   }
 
-  .foto-grid__item.foto-grid__item-4 {
+  .foto-grid__item.foto-grid__books {
     grid-area: i4;
   }
 
-  .foto-grid__item.foto-grid__item-5 {
+  .foto-grid__item.foto-grid__street {
     grid-area: i5;
   }
 }

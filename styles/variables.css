@@ -16,5 +16,5 @@
   --content-gap: 50px;
   --display: flex;
   --main-font: 'IBM Plex mono';
-  --background-img: 'url(../images/cover-image-dark.png)';
+  --background-img: url(../images/cover-image-dark.png);
 }
