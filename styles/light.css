@@ -4,31 +4,6 @@
   переключая тему
 */
 
-:root.theme_light {
-  --background-color: #FFF1F7;
-  --accent-color: #FF8DCB;
-  --accent-text-color: #353430;
-  --title-color: #FFC2E6;
-  --title-decor-color: #353430;
-  --text-color: #353430;
-}
-
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  background-image: url(../images/cover-image-light.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.theme_light .lamp {
-  display: none;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
         --background-color: #FFF1F7;
@@ -36,7 +11,33 @@
         --accent-text-color: #353430;
         --title-color: #FFC2E6;
         --title-decor-color: #353430;
-        --text-color: #353430;    
+        --text-color: #353430;   
+        --border-color: #353430;
+        --border-hover-color: rgb(53, 52, 48, 0.4);
+        --background-img: url(../images/cover-image-light.png);
+        --display: none;
     }
+  }
+
+.page.theme_light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --background-color: #FFF1F7;
+  --accent-color: #FF8DCB;
+  --accent-text-color: #353430;
+  --title-color: #FFC2E6;
+  --title-decor-color: #353430;
+  --text-color: #353430;   
+  --border-color: #353430;
+  --border-hover-color: rgb(53, 52, 48, 0.4);
+  --background-img: url(../images/cover-image-light.png);
+  --display: none;
 }
 
+@media (min-width: 1024px) {
+  .header__title, .footer__title {
+    --accent-color: #FF0070;
+  }
+}

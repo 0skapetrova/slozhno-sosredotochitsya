@@ -4,16 +4,6 @@
   переключая тему
 */
 
-:root.theme_dark {
-  --background-color: #000028;
-  --accent-color: #ff0070;
-  --accent-text-color: #ff0070;
-  --title-color: #DB00FF;
-  --title-decor-color: #000028;
-  --text-color: #F1B2CE;
-  --main-font: 'IBM Plex mono';
-}
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -25,20 +15,10 @@
   --title-color: #DB00FF;
   --title-decor-color: #000028;
   --text-color: #F1B2CE;
-  background-image: url(../images/cover-image-dark.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  --border-color: #ff0070;
+  --border-hover-color: rgb(255, 0, 112, 0.4);
+  --background-img: url(../images/cover-image-dark.png);
+  --display: flex;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-      --background-color: #000028;
-      --accent-color: #ff0070;
-      --accent-text-color: #ff0070;
-      --title-color: #DB00FF;
-      --title-decor-color: #000028;
-      --text-color: #F1B2CE; 
-    }
-}
+
