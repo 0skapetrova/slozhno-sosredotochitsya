@@ -24,7 +24,7 @@
   margin-block-end:  calc(var(--padding) + 20px);
 }
 
-.lamp{
+.lamp {
   position: absolute;
   inset: var(--padding) calc(var(--padding) + 10px) auto auto;
   display: var(--display);
@@ -85,14 +85,9 @@
   padding: 0;
 }
 
-
-.header__theme-menu-button {
-  border: 1px solid transparent;
-}
-
 .header__theme-menu-button {
   background-color: transparent;
-  border-color: transparent;
+  border: 1px solid transparent;
   color: var(--accent-text-color, #ff0070);
   font-family: var(--main-font, sans-serif);
   font-size: 18px;
